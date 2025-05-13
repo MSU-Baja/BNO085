@@ -1,0 +1,26 @@
+2025-05-09 08:13:19,895 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Exception in thread "Browser Thread: 05752531-8a17-4048-b810-5ab0139fe83c" java.lang.IllegalStateException
+2025-05-09 08:13:19,942 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.deps.com.google.common.base.Preconditions.checkState(Preconditions.java:494)
+2025-05-09 08:13:19,944 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.internal.RpcThreadImpl.submit(RpcThreadImpl.java:94)
+2025-05-09 08:13:19,945 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.internal.rpc.ServiceConnectionImpl.lambda$invokeAsync$6(ServiceConnectionImpl.java:224)
+2025-05-09 08:13:19,946 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.deps.com.google.protobuf.RpcUtil$1.run(RpcUtil.java:79)
+2025-05-09 08:13:19,946 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.deps.com.google.protobuf.RpcUtil$1.run(RpcUtil.java:70)
+2025-05-09 08:13:19,946 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.internal.rpc.ServiceChannel$1.onError(ServiceChannel.java:76)
+2025-05-09 08:13:19,947 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.internal.rpc.transport.SharedMemoryTransport.send(SharedMemoryTransport.java:101)
+2025-05-09 08:13:19,947 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.internal.rpc.transport.RpcConnection.send(RpcConnection.java:79)
+2025-05-09 08:13:19,947 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.internal.rpc.ServiceChannel.callMethod(ServiceChannel.java:52)
+2025-05-09 08:13:19,947 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.navigation.internal.rpc.NavigationStub.load(NavigationStub.java:55)
+2025-05-09 08:13:19,948 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.internal.rpc.ServiceConnectionImpl.invokeAsync(ServiceConnectionImpl.java:223)
+2025-05-09 08:13:19,949 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.internal.rpc.ServiceConnectionImpl.invokeAsync(ServiceConnectionImpl.java:237)
+2025-05-09 08:13:19,949 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.navigation.internal.NavigationImpl.loadUrl(NavigationImpl.java:78)
+2025-05-09 08:13:19,949 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.navigation.internal.NavigationImpl.loadUrl(NavigationImpl.java:66)
+2025-05-09 08:13:19,949 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.microxplorer.plugins.userauth.WebApp.lambda$new$0(WebApp.java:180)
+2025-05-09 08:13:19,949 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.event.internal.NewObservableHelper.notifyObservers(NewObservableHelper.java:57)
+2025-05-09 08:13:19,949 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.internal.rpc.stream.EventStream.dispatch(EventStream.java:73)
+2025-05-09 08:13:19,949 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.internal.rpc.stream.EventStream.process(EventStream.java:125)
+2025-05-09 08:13:19,950 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.internal.rpc.stream.Stream$StreamObserver.lambda$onNext$0(Stream.java:167)
+2025-05-09 08:13:19,951 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.teamdev.jxbrowser.internal.RpcThreadImpl$TaskRunner.processTasks(RpcThreadImpl.java:172)
+2025-05-09 08:13:19,951 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-09 08:13:20,319 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 8:13:20.158 ERROR Chromium process exit code: 134
+2025-05-09 08:13:20,321 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2025-05-09 08:13:20,326 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 8:13:20.322 ERROR Crash dump dir: /Users/jonahk/Library/Application Support/JxBrowser/7.39.2/CrashReports
+2025-05-09 08:13:20,327 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 

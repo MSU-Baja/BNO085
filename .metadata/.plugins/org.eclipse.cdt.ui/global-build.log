@@ -1,0 +1,21 @@
+16:11:36 **** Incremental Build of configuration Debug for project BNO085 ****
+make -j7 all 
+arm-none-eabi-size  BNO085.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30468	    468	   2196	  33132	   816c	BNO085.elf
+Finished building: default.size.stdout
+ 
+16:32:39 **** Incremental Build of configuration Debug for project BNO085 ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "BNO085.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/jonahk/CanBus System/BNO085/STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNO085.map" -Wl,--gc-sections -static -u_printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BNO085.elf
+ 
+arm-none-eabi-size  BNO085.elf 
+arm-none-eabi-objdump -h -S BNO085.elf  > "BNO085.list"
+   text	   data	    bss	    dec	    hex	filename
+  30460	    468	   2196	  33124	   8164	BNO085.elf
+Finished building: default.size.stdout
+ 
+Finished building: BNO085.list
+ 
